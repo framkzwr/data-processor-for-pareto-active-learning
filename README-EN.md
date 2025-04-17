@@ -94,9 +94,9 @@ Implementation File: ```📄 normalization.py```
 #### Description
 
 For each feature column:
-$$
+```math
 X_{norm} = \frac{X-X_{min}}{X_{max}-X_{min}}
-$$
+```
 
 Maps data to $[0,1]$ range by default, where $X_{max}$ and $X_{min}$ are column max/min values.
 
@@ -113,9 +113,9 @@ Implementation File: ```📄 standardization.py```
 #### Description
 
 For each target column:
-$$
+```math
 X_{std} = \frac{X-\mu}{\sigma}
-$$
+```
 
 Where $\mu$ is column mean and $\sigma$ is standard deviation.
 
@@ -197,17 +197,18 @@ pip list
 
 Expected installed packages:
 
-Package	Version
-📦 numpy	2.2.4
-📦 pandas	2.2.3
-📦 pip	25.0
-📦 python-dateutil	2.9.0.post0
-📦 pytz	2025.2
-📦 setuptools	75.8.0
-📦 six	1.17.0
-📦 tzdata	2025.2
-📦 wheel	0.45.1
-Installation
+| Package | Version |
+|---------|---------|
+| 📦 numpy | 2.2.4 |
+| 📦 pandas | 2.2.3 |
+| 📦 pip | 25.0 |
+|📦 python-dateutil | 2.9.0.post0 |
+| 📦 pytz | 2025.2 |
+| 📦 setuptools | 75.8.0 |
+| 📦 six | 1.17.0 |
+| 📦 tzdata | 2025.2 |
+| 📦 wheel | 0.45.1 |
+### Installation
 ```bash
 cd ~/data_processor/
 pip install -e .
@@ -216,7 +217,7 @@ pip list
 Should show:
 data-processor	1.0.0
 
-Test Code
+### Test Code
 ```python
 from data_processor import (
     load_excel, save_excel,
@@ -299,10 +300,10 @@ if __name__ == "__main__":
     save_excel(df, OUTPUT_FILES["unlabeled"])
     print("------------Data pretreatment finished------------")
 ```
-Notes
-test.py must be in the same directory as input/output XLSX files
-EXPANSION_RANGES must include all feature columns. For non-expanding columns, follow the para_4 example in test.py
-Include columns to be removed from unlabeled data (e.g., obj_1, obj_2) in COLUMNS_TO_REMOVE
+#### Notes
+* test.py must be in the same directory as input/output **xlsx** files
+* `EXPANSION_RANGES` must include all feature columns. For non-expanding columns, follow the **para_4** example in `test.py`
+* Include columns to be removed from unlabeled data (e.g., obj_1, obj_2) in `COLUMNS_TO_REMOVE`
 
 
 
