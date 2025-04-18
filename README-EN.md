@@ -51,6 +51,7 @@ For predicting Pareto frontiers, candidate data space preparation is needed. Thi
 ```text
 📦 data-processor
 ├── 📂 data-processor
+│   ├── 📄 __init__.py
 │   ├── 📄 normalization.py
 │   ├── 📄 standardization.py
 │   ├── 📄 combination.py
@@ -64,6 +65,7 @@ For predicting Pareto frontiers, candidate data space preparation is needed. Thi
 
 | Code File              | Functionality                 |
 |------------------------|-------------------------------|
+| 📄 __init__.py         | Define interface              |
 | 📄 normalization.py    | Normalization processing      |
 | 📄 standardization.py  | Standardization processing    |
 | 📄 combination.py      | Column combination processing |
