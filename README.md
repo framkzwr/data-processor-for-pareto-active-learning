@@ -47,6 +47,7 @@
 ```
 📦 data-processor
 ├── 📂 data-processor
+│   ├── 📄 __init__.py
 │   ├── 📄 normalization.py
 │   ├── 📄 standardization.py
 │   ├── 📄 combination.py
@@ -60,6 +61,7 @@
 
 | 代码文件             | 功能           |
 | -------------------- | -------------- |
+| 📄 __init__.py        | 定义接口       |
 | 📄 normalization.py   | 归一化处理     |
 | 📄 standardization.py | 标准化处理     |
 | 📄 combination.py     | 数据列组合处理 |
